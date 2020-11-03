@@ -4,28 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1">
     <title>Hello World</title>
+    <!-- this is the Style sheet. It has all the references and I bassically used it to format and color half of my website -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
 
   <body>
-
+    <!-- title in the middle -->
     <div class="bgimg w3-display-container w3-text-white">
-      <div class="W3-display-topmiddle w3-container w3-xxlarge">
-        <p>What do you want to be seen as?</p>
+      <div class="w3-display-middle w3-container w3-xxlarge">
+        <p class = "w3-center">What do you want to be seen as?</p>
       </div>
+      <!-- Crew-mate button. these buttons were a massive headache -->
       <div class="w3-display-topright w3-container w3-xlarge w3-margintop">
-       <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-opacity w3-white">Crew-mate</button></p>
+       <p><button onclick="document.getElementById('crew').style.display='block'" class="w3-button w3-opacity w3-white">Crew-mate</button></p>
       </div>
+      <!-- imposter button -->
       <div class="w3-display-topleft w3-container w3-xlarge">
-        <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-opacity w3-red">Imposter</button></p>
+        <p><button onclick="document.getElementById('impost').style.display='block'" class="w3-button w3-opacity w3-red">Imposter</button></p>
       </div>
       <div class="w3-display-bottomleft w3-container">
         <p>Author</p>
         <p>References</p>
       </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Crewmate Tab. W3 schools really spoiled me here. I watched one video on how to make these and they look beautiful -->
+    <div id="crew" class="w3-modal">
+      <div class="w3-modal-content w3-opacity w3-white w3-animate-zoom">
+        <div class="w3-container w3-white w3-display-container">
+          <span onclick="document.getElementById('crew').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+          <h1>Crew Mate</h1>
+          <h5>The web is a big place but its important to know that any and all data put online is permanent, good or bad.</h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- imposter tab -->
+    <div id="impost" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black w3-display-container">
+          <span onclick="document.getElementById('impost').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+          <h1>Imposter</h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
