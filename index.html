@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1">
-    <title>Hello World</title>
+    <title>Space</title>
     <!-- this is the Style sheet. It has all the references and I bassically used it to format and color half of my website -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -11,27 +11,37 @@
 
   <body>
     <!-- title in the middle -->
+
     <div class="bgimg w3-display-container w3-text-white">
       <div class="w3-display-middle w3-container w3-xxlarge">
         <p class = "w3-center">What do you want to be seen as?</p>
       </div>
       <!-- Crew-mate button. these buttons were a massive headache -->
-      <div class="w3-display-topright w3-container w3-xlarge w3-margintop">
-       <p><button onclick="document.getElementById('crew').style.display='block'" class="w3-button w3-opacity w3-white">Crew-mate</button></p>
+      <div class="w3-display-topright w3-container">
+        <div class="w3-display-container w3-margin-top">
+          <img src="Report.png" width="200" length="200">
+          <div class="w3-display-middle">
+            <button onclick="document.getElementById('crew').style.display='block'" class = "btn"></button>
+          </div>
+        </div>
       </div>
       <!-- imposter button -->
-      <div class="w3-display-topleft w3-container w3-xlarge">
-        <p><button onclick="document.getElementById('impost').style.display='block'" class="w3-button w3-opacity w3-red">Imposter</button></p>
+      <div class="w3-display-topleft w3-container">
+        <div class="w3-display-container w3-margin-top">
+          <img src="081nznr69en51.png" width="200" length="200">
+          <div class="w3-display-middle">
+            <button onclick="document.getElementById('impost').style.display='block'" class = "btn"></button>
+          </div>
+        </div>
       </div>
       <div class="w3-display-bottomleft w3-container">
-        <p>Author</p>
-        <p>References</p>
+        <p><button onclick="document.getElementById('references').style.display='block'" class="w3-button w3-black">References</button></p>
       </div>
     </div>
 
     <!-- Crewmate Tab. W3 schools really spoiled me here. I watched one video on how to make these and they look beautiful -->
     <div id="crew" class="w3-modal">
-      <div class="w3-modal-content w3-opacity w3-white w3-animate-zoom">
+      <div class="w3-modal-content w3-white w3-animate-zoom">
         <div class="w3-container w3-white w3-display-container">
           <span onclick="document.getElementById('crew').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
           <h1>Crew Mate</h1>
@@ -46,6 +56,23 @@
         <div class="w3-container w3-black w3-display-container">
           <span onclick="document.getElementById('impost').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
           <h1>Imposter</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- References -->
+    <div id="references" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black w3-display-container">
+          <span onclick="document.getElementById('references').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+          <h1>References</h1>
+          <h5> - Don't let one bad tweet ruin an athlete's future. (2017). democratandchronocle.com. Retrieved 17 October 2020, from 
+          https://www.democratandchronicle.com/story/sports
+          /2017/09/06/
+          cyberbullying-social-media-student-athletes-scholarships/464543001/</h5>
+          <h5> - A messy digital footprint can cost you a job. (2018). ft.com. Retrieved 17 October 2020, from https://www.ft.com/content/87cfe2ee-bfeb-11e8-84cd-9e601db069b8</h5>
+          <h5> - Your Digital Footprint Matters. (2020). internetsociety.org. Retrieved 17 October 2020, from https://www.internetsociety.org/tutorials/your-digital-footprint-matters/</h5>
+          <h5> - What Every Teen Needs to Know About Their Digital Footprint. (2019). netnanny.com. Retrieved 17 October 2020, from https://www.netnanny.com/blog/what-every-teen-needs-to-know-about-their-digital-footprint/</h5>
         </div>
       </div>
     </div>
