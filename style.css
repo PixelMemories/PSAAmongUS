@@ -1,4 +1,12 @@
-body,h1,h5 {font-family: "Raleway", sans-serif}
+@font-face {
+    font-family: "Custom";
+    src: url('inyourfacejoffrey-webfont.woff2') format('woff2'),
+         url('inyourfacejoffrey-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body,h1,h2 {font-family: 'Custom', Arial }
+h5,p {font-family: Arial}
 body, html {height: 100%}
 .bgimg {
   background-image: url('xa1k7o34aaq51.jpg');
@@ -6,6 +14,7 @@ body, html {height: 100%}
   background-position: center;
   background-size: cover;
 }
+
 .btn {
   padding: 100px 100px;
   border: none;
